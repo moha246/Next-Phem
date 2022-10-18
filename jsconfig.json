@@ -17,9 +17,11 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
+      "@helpers/*": ["src/helpers/*"],
       "@config/*": ["src/config/*"],
       "@pages/*": ["src/pages/*"],
       "@services/*": ["src/services/*"],
+      "@store/*": ["src/store/*"],
       "@styles/*": ["src/styles/*"],
       "@hooks/*": ["src/hooks/*"]
     }

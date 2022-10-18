@@ -1,11 +1,12 @@
 import axios from "axios";
-import { apiURL } from "@config/index";
+import { apiURL, jwtCookies } from "@config/index";
+import nookies from "nookies";
 
 const instanceSettings = {
   baseURL: apiURL,
   timeout: 300000,
 };
-let jwt = "ghvdnjklmvlkmdflkvmvkmd";
+let jwt = nookies.get()[jwtCookies];
 
 function formatResponseError({ response, ...rest }) {
   let formatedError = {
